@@ -20,7 +20,7 @@ from clientes.api.router import router_clientes,router_valores, router_cifras, r
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('clientes/', include(router_clientes.urls)),
+    path('', include(router_clientes.urls)),
     path('valores/', include(router_valores.urls)),
     path('cifras/', include(router_cifras.urls)),
     path('cobros/', include(router_cobros.urls))
